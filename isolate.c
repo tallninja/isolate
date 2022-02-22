@@ -657,7 +657,7 @@ setup_rlimits(void)
     RLIM(FSIZE, (rlim_t)fsize_limit * 1024);
 
   RLIM(STACK, (stack_limit ? (rlim_t)stack_limit * 1024 : RLIM_INFINITY));
-  RLIM(NOFILE, 256);
+  RLIM(NOFILE, 512);
   RLIM(MEMLOCK, 0);
 
   if (max_processes)
